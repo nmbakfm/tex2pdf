@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+	echo 'choose your .tex file';
+fi
+
+for file in $*
+do
+	if [ -e $file ]; then
+		platex $file;
+		dvipdfmx ${file%.tex}.dvi;
+	else
+		echo "$file doesn't exist";
+	fi
+done

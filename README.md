@@ -8,4 +8,4 @@ move to download directory and type `./install`
 
 # USAGE
 
-`tex2pdf file1 [file2 [file3 ...]`
+`tex2pdf file1 [file2 [file3 ...]]`
